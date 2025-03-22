@@ -1,0 +1,14 @@
+{
+    "name": "GenMail",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Generate email",
+
+    "content_scripts": [
+        {
+            "matches": ["https://mail.google.com/*"],
+            "js": ["content.js"],
+            "css": ["style.css"]
+        }
+    ]
+}
