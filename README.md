@@ -45,15 +45,13 @@ Quick and Human-y.
 
 ## Email Template Example
 Once you hit compose, you'll get this fancy template:
-```html
-<strong>To:</strong><br>
-<strong>Relation:</strong><br>
-<strong>From:</strong><br>
-<strong>Subject:</strong><br>
-<strong>Mood:</strong><br>
-<strong>What to include:</strong><br>
-<strong>What not to include:</strong><br><br>
-```
+
+**To:
+Relation:
+From:
+Subject:
+Mood:
+Length:**
 
 It’s auto-generated and makes your emails look more thoughtful with minimal effort. 
 
