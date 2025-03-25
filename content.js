@@ -15,13 +15,12 @@ observer.observe(document.body, {
 const ai_button = (commentBox) => {
     clicked = false;
     const button = document.createElement("button");
-    button.innerHTML = "AI";
-    button.style.position = "absolute";  // Optional: make the button stick to the right side
-    button.style.right = "10px";  // Optional: align the button to the right
-    button.style.marginLeft = "10px";  // Optional: add some spacing
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Black" class="bi bi-lightbulb-fill"><path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/></svg>';
+    button.style.position = "absolute"; 
+    button.style.right = "10px";  
     button.addEventListener("click", async () => {
-        const suggestion = "<b>To:</b><br><b>Relation:<br>From:<br>Subject:<br>Mood:<br>How Long:<br>What to include(optional):<br>What not to include (optional):<br><br></b>";
-        const compare = "To:Relation:From:Subject:Mood:How Long:What to include:What not to include:";
+        const suggestion = "<b>To:</b><br><b>Relation:<br>From:<br>Subject:<br>Mood:<br>Length:<br><br></b>";
+        const compare = "To:Relation:From:Subject:Mood:Length:";
         const messageBody = document.querySelector('div[aria-label="Message Body"]');
         const subjBody = document.querySelector('input[name="subject"]');
         if (!clicked)
@@ -39,8 +38,8 @@ const ai_button = (commentBox) => {
             //get text content and compare with suggestion and if its the same then display an error
             if (messageBody.textContent === compare)
             {
-                console.log("Error: No changes made to the text");
-                clicked = false;
+                const err = "<b>Error! Text fields empty. Please try again.</b>";
+                messageBody.innerHTML = `<p>${err}</p>`;
             }
             else
             {
@@ -53,13 +52,13 @@ const ai_button = (commentBox) => {
                     subjBody.value = `${subject}`;
                     let event = new Event('input', { bubbles: true });
                     subjBody.dispatchEvent(event);
-                    clicked = false;
                 } catch (error) {
                     console.error("Error fetching email:", error);
                     messageBody.innerHTML = `<p>Error: Could not generate email.</p>`;
-                    clicked = false;
+
                 }
             }
+            clicked = false;
             
         }
 
