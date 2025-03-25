@@ -11,12 +11,13 @@ However, even opening up chatgpt or gemini and explaining what I want written in
 ## Demo
 ![Screenshot 2025-03-25 210717](https://github.com/user-attachments/assets/1600afe0-f3fa-4211-925a-d0c967ea08b6)
 
-Email generated within seconds.
+### Email generated within seconds.
 
 ![Screenshot 2025-03-25 211104](https://github.com/user-attachments/assets/f8f6c411-beb4-4815-ac78-44d549df5359)
 
 
-#### Another Example
+### Another Example
+
 ![Screenshot 2025-03-25 211528](https://github.com/user-attachments/assets/1c8fb0d9-ee25-4581-997a-4b34588dcf9a)
 
 ![Screenshot 2025-03-25 211606](https://github.com/user-attachments/assets/4c6b6eb0-5e7e-4813-a32a-88a138aa3c9d)
