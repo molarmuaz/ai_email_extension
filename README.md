@@ -43,18 +43,6 @@ Quick and Human-y.
 4. **Compose Emails** like a Boss:
    - Go to Gmail, hit **Compose** and see the magic happen! The email suggestion template appears, making you look super organized without the effort.
 
-## Email Template Example
-Once you hit compose, you'll get this fancy template:
-
-**To:
-Relation:
-From:
-Subject:
-Mood:
-Length:**
-
-It’s auto-generated and makes your emails look more thoughtful with minimal effort. 
-
 ## Final Thoughts
 This extension is far from perfect and was more of a fun project I have wanted to do for a while. Have fun with it, add buttons, change the prompt, etc. If I ever come back to this project I would want to figure out how to also add the subject in the subject line (as you can see in my code, I have failed in doing so and couldn't figure out the issue).
 
